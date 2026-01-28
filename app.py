@@ -6,7 +6,16 @@ import plotly.graph_objects as go
 st.set_page_config(page_title="Finanza Hogar Pro", layout="wide", page_icon="🏠")
 
 # --- FUNCIÓN PARA IMAGEN DE FONDO ---
-def agregar_fondo():
+def agregar_fondo(/* Tarjetas de datos más transparentes y modernas */
+        [data-testid="stVerticalBlock"] > div {
+            background-color: rgba(255, 255, 255, 0.6); /* Bajamos de 0.9 a 0.6 */
+            backdrop-filter: blur(10px); /* Esto le da un efecto de vidrio esmerilado */
+            padding: 25px;
+            border-radius: 15px;
+            color: #002147;
+            box-shadow: 0px 8px 32px rgba(31, 38, 135, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }):
     st.markdown(
         f"""
         <style>
